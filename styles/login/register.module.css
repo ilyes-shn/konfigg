@@ -82,7 +82,7 @@
     border: 1px solid #868686;
     height: 32px;
     background-color: white;
-    padding: 0px 20px;
+    overflow: hidden;
     margin-bottom: 30px;
     color: #303030;
 }
@@ -90,6 +90,8 @@
 .input input {
     border: none;
     height: 100%;
+    padding: 0px 20px;
+    width: 100%;
 }
 
 .form h3 {
