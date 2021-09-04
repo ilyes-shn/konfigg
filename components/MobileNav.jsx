@@ -68,7 +68,7 @@ const MobileNav = () => {
               <div className={styles.imag}></div>
               <h2>Project Name</h2>
             </div>
-            <a href="/pages">
+            <Link href="/pages">
               <div className={styles.active}>
                 <Image
                   height="16"
@@ -79,12 +79,12 @@ const MobileNav = () => {
                 <h3>Pages</h3>
                 <h5>23</h5>
               </div>
-            </a>
+            </Link>
             <div className={styles.link}>
               <Image height="16" width="16" src="/images/docs.svg" alt="docs" />
               <h3>Documentation</h3>
             </div>
-            <a href="/members">
+            <Link href="/members">
               <div className={styles.link}>
                 <Image
                   height="16"
@@ -94,8 +94,8 @@ const MobileNav = () => {
                 />
                 <h3>Members</h3>
               </div>
-            </a>
-            <a href="/settings">
+            </Link>
+            <Link href="/settings">
               <div className={styles.link}>
                 <Image
                   height="16"
@@ -105,7 +105,7 @@ const MobileNav = () => {
                 />
                 <h3>Settings</h3>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       )}
