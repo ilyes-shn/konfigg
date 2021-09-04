@@ -38,7 +38,7 @@ const NewPageCreate = () => {
           </div>
           <h3>Publish Date</h3>
           <div className={styles.input}>
-            <input type="text" placeholder="Input" placeholder='YYYY-MM-DD'/>
+            <input type="text" placeholder='YYYY-MM-DD'/>
           </div>
           <h3>Intro</h3>
           <div className={styles.input}>
