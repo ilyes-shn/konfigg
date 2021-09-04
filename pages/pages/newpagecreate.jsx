@@ -4,7 +4,7 @@ import Image from "next/image";
 import {useRouter} from 'next/router'
 
 
-const NewPage = () => {
+const NewPageCreate = () => {
   const [active, setActive] = useState(true)
   const router = useRouter()
 
@@ -62,4 +62,4 @@ const NewPage = () => {
   );
 };
 
-export default NewPage;
+export default NewPageCreate;
