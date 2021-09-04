@@ -27,6 +27,7 @@
 .header h2 {
     font-size: 14px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .header h4 {
@@ -39,6 +40,7 @@
     height: 100%;
     background-image: url('/images/one.png');
     background-size: cover;
+    background-position: center;
 }
 
 .form {
@@ -71,6 +73,7 @@
     background-color: white;
     padding: 0px 20px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .inputs h4 {

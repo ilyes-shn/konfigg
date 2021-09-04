@@ -6,5 +6,13 @@
 }
 
 body {
-  background: #E5E5E5;
+  height: 100vh;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
 }

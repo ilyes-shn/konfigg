@@ -27,6 +27,7 @@
 .header h2 {
     font-size: 14px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .header h4 {
@@ -39,6 +40,7 @@
     height: 100%;
     background-image: url('/images/three.png');
     background-size: cover;
+    background-position: center;
 }
 
 .form {

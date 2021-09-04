@@ -1,0 +1,8 @@
+.layout {
+    display: flex;
+    height: 100%;
+}
+
+.page {
+    flex: 1;
+}

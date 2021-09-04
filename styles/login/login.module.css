@@ -26,6 +26,7 @@
 .header h2 {
     font-size: 14px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .header h4 {
@@ -38,6 +39,7 @@
     height: 100%;
     background-image: url('/images/four.png');
     background-size: cover;
+    background-position: center;
 }
 
 .form {
@@ -67,6 +69,7 @@
     background-color: white;
     padding: 0px 20px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .inputs h4 {
@@ -106,6 +109,7 @@
     font-size: 12px;
     text-decoration: underline;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
