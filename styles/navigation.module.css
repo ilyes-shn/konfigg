@@ -6,6 +6,7 @@
   padding: 0px 20px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .left {
@@ -19,6 +20,7 @@
   color: #303030;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .right {
@@ -76,7 +78,7 @@ overflow: hidden;
 }
 
 .popup {
-position: fixed;
+position: absolute;
 width: 240px;
 border: 1px solid #BFBFBF;
 border-radius: 4px;

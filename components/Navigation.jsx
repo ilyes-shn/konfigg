@@ -14,7 +14,7 @@ const Navigation = () => {
     <div className={styles.navigation}>
       <div className={styles.left}>
         <Image height="27" width="27" src="/images/4535.svg" alt="logo" />
-        <h2>Konfigg</h2>
+        <h2 onClick={() => router.push('/pages')}>Konfigg</h2>
       </div>
       <div className={styles.right}>
         <div className={styles.add}>
