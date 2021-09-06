@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@material-ui/core";
 import { useRouter } from "next/router";
 import Invoice from '../../components/Invoice'
+import Cards from '../../components/Cards'
 
 const Belling = () => {
   const router = useRouter();
@@ -207,6 +208,7 @@ const Belling = () => {
                   <Image height='26' width='26' src='/images/close1.svg' alt='close'/>
                 </div>
                 <h2>Konfigg Pricing</h2>
+                <Cards />
               </div>
             </div>
           )

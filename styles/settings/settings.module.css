@@ -201,6 +201,7 @@ line-height: 36px;
   left: 0;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
   background-color: rgba(0,0,0,0.5);
   padding: 10px;
   padding-top: 60px;
@@ -211,6 +212,8 @@ line-height: 36px;
   padding: 60px 10px;
   border-radius: 4px;
   position: relative;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .close {
@@ -225,6 +228,11 @@ line-height: 36px;
   font-size: 20px;
   width: 100%;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.box::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -243,6 +251,11 @@ line-height: 36px;
     .information {
 width: 100%;
 padding: 10px;
+    }
+
+
+    .box {
+      width: 90vw;
     }
 
     .input  {
