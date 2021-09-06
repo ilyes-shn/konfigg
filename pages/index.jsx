@@ -49,6 +49,7 @@ const Login = () => {
             variant="contained"
             color="primary"
             style={{ width: "max-content" }}
+            onClick={() => router.push('/pages')}
           >
             Login
           </Button>
