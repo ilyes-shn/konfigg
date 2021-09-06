@@ -6,7 +6,7 @@ import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import Link from "next/link";
 import {useRouter} from 'next/router'
 
-const MobileNav = () => {
+const MobileNav = ({title}) => {
   const router = useRouter()
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
@@ -17,7 +17,7 @@ const MobileNav = () => {
           <div className={styles.open} onClick={() => setOpen(true)}>
             <Image width="20" height="20" src="/images/open.svg" alt="open" />
           </div>
-          <h3>Profile</h3>
+          <h3>{title}</h3>
         </div>
       )}
       {open && (

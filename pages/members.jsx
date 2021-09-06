@@ -12,7 +12,7 @@ const Pages = () => {
 
   return (
     <Layout>
-      <MobileNav />
+      <MobileNav title='Members'/>
       <div className={styles.pages}>
         <h1>Members</h1>
         <h4 className={styles.description}>

@@ -172,7 +172,10 @@
 }
 
   @media only screen and (max-width: 600px) {
-   
+    .pages {
+      padding: 50px 10px;
+      width: 100vw;
+    }
 
     .table {
 padding-right: 0px;

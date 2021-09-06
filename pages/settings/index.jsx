@@ -10,7 +10,7 @@ const Settings = () => {
 
     return (
         <Layout>
-            <MobileNav />
+            <MobileNav title='Settings'/>
             <div className={styles.settings}>
                 <h1>Settings</h1>
                 <h4 className={styles.description}>The default typography uses line-heights that align with our UI components. Margins are not included to allow for easier alignment with other UI elements.</h4>

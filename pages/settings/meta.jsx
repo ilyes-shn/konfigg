@@ -9,7 +9,7 @@ const Meta = () => {
 
   return (
     <Layout>
-      <MobileNav />
+      <MobileNav title='Settings'/>
       <div className={styles.settings}>
         <h1>Settings</h1>
         <h4 className={styles.description}>
