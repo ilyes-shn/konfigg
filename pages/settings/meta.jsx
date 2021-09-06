@@ -4,7 +4,7 @@ import MobileNav from "../../components/MobileNav";
 import styles from "../../styles/settings/settings.module.css";
 import { useRouter } from "next/router";
 
-const settings = () => {
+const Meta = () => {
   const router = useRouter();
 
   return (
@@ -58,4 +58,4 @@ const settings = () => {
   );
 };
 
-export default settings;
+export default Meta;

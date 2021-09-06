@@ -5,7 +5,7 @@ import styles from '../../styles/settings/settings.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
 
-const settings = () => {
+const Settings = () => {
   const router = useRouter()
 
     return (
@@ -69,4 +69,4 @@ const settings = () => {
     )
 }
 
-export default settings
+export default Settings

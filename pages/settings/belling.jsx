@@ -7,7 +7,7 @@ import { Button } from "@material-ui/core";
 import { useRouter } from "next/router";
 import Invoice from '../../components/Invoice'
 
-const settings = () => {
+const Belling = () => {
   const router = useRouter();
   const [price, setPrice] = useState(false)
 
@@ -216,4 +216,4 @@ const settings = () => {
   );
 };
 
-export default settings;
+export default Belling;
