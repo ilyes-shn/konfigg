@@ -57,6 +57,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-right: 170px;
 }
 
 .menuItem {
@@ -172,7 +173,14 @@
 }
 
   @media only screen and (max-width: 600px) {
-   
+    .pages {
+      padding: 50px 10px;
+      width: 100vw;
+    }
+
+    .menuItem {
+width: 110px;
+    }
 
     .table {
 padding-right: 0px;
@@ -196,19 +204,3 @@ overflow-x: scroll;
       width: 100%;
     }
   }
-
-
-  @media only screen and (max-width: 600px) {
-    .pages {
-        width: 100vw;
-        justify-content: space-between;
-    }
-    .user, .type, .update, .action, .state {
-        margin: 0px;
-        
-    }
-
-    .menuItem {
-      width: 110px;
-    }
-}

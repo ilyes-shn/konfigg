@@ -1,8 +1,10 @@
 .settings {
     padding: 60px 40px;
+    padding-right: 150px;
     overflow-y: scroll;
     color: #303030;
     width: 100%;
+    height: 100vh;
 }
 
 .settings h1 {
@@ -44,6 +46,91 @@ line-height: 36px;
   font-weight: lighter;
 }
 
+.input {
+  width: 580px;
+  border-radius: 4px;
+  border: 1px solid #868686;
+  height: 32px;
+  background-color: white;
+  margin-bottom: 20px;
+  color: #303030;
+  overflow: hidden;
+}
+
+.input input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.form h3 {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 7px;
+  color: #303030;
+  text-decoration: none !important;
+}
+
+.information {
+  border: 1px solid #BFBFBF;
+  border-radius: 4px;
+  width: 779px;
+  padding: 0px 0px 40px 40px;
+}
+
+.menu {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 190px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.menuItem div {
+  margin-left: 30px;
+}
+
+.menuItem h3 {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.menuItem input {
+  border: none;
+  outline: none;
+}
+
+.item {
+  margin-left: 20px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.item h3 {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.item h4 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.item input {
+  border: none;
+  outline: none;
+}
+
+
 @media only screen and (max-width: 600px) {
     .settings {
       padding: 50px 10px;
@@ -52,4 +139,17 @@ line-height: 36px;
     .description {
       width: 100%;
     }
+
+    .menuItem {
+      width: 110px;
+          }
+
+    .information {
+width: 100%;
+padding: 10px;
+    }
+
+    .input  {
+      width: 100%;
+        }
   }
