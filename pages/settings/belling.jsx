@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../../components/Layout";
 import MobileNav from "../../components/MobileNav";
 import styles from "../../styles/settings/settings.module.css";
@@ -9,6 +9,7 @@ import Invoice from '../../components/Invoice'
 
 const settings = () => {
   const router = useRouter();
+  const [price, setPrice] = useState(false)
 
   return (
     <Layout>
@@ -58,6 +59,7 @@ const settings = () => {
             variant="contained"
             color="primary"
             style={{ width: "max-content" }}
+            onClick={() => setPrice(true)}
           >
             Change Plan
           </Button>
@@ -96,13 +98,119 @@ const settings = () => {
         </div>
         <div className={styles.invoice}>
         <Invoice
-              state="Marketing"
-              type="22"
+              state="Paid"
+              type="Landing"
               lastUpdate="4 days ago"
-              page="Louis Vuitton"
+              page="March 2021"
               color="#7FC008"
             />
+             <Invoice
+              state="Overdue"
+              type="Landing"
+              lastUpdate="4 days ago"
+              page="March 2021"
+              color="#DB303F"
+            />
+             <div className={styles.pagination}>
+          <div className={styles.gauche}>
+            <div className={styles.img}>
+              <Image
+                height="15"
+                width="15"
+                src="/images/gauche.svg"
+                alt="gauche"
+              />
+            </div>
+            <span>1</span>
+            <h4>/</h4>
+            <h4>16</h4>
+            <div className={styles.img}>
+              <Image
+                height="15"
+                width="15"
+                src="/images/droite.svg"
+                alt="gauche"
+              />
+            </div>
+          </div>
+          <div className={styles.droite}>
+            <h4>Rows per page</h4>
+            <span>15</span>
+          </div>
         </div>
+        </div>
+        <div className={styles.info}>
+          <h2>Billing details</h2>
+          <h4>Payment and billing information for this team account</h4>
+        </div>
+        <div className={styles.information}>
+          <div className={styles.info}>
+            <h2>Payment information</h2>
+          </div>
+          <div className={styles.form}>
+           <table style={{width: '100%', fontSize: '14px', marginBottom: '30px'}}>
+             <tbody>
+             <tr>
+               <td><h3>Payment method</h3></td>
+               <td>**** **** **** **45</td>
+               <td><Image height='32' width='51' src='/images/master.svg' alt='card'/></td>
+               <td><Image height='24' width='24' src='/images/member/points.svg' alt='dots'/></td>
+
+             </tr>
+             <tr>
+               <td>Credit card</td>
+             </tr>
+             </tbody>
+           </table>
+           <Button
+            variant="contained"
+            color="primary"
+            style={{ width: "max-content" }}
+          >
+            Add a payment method
+          </Button>
+          </div>
+        </div>
+        <div className={styles.information} style={{marginTop: '50px'}}>
+          <div className={styles.info}>
+            <h2>Billing information</h2>
+          </div>
+          <div className={styles.form}>
+            <h3>Name</h3>
+            <div className={styles.input}>
+              <input
+                type="text"
+                defaultValue="Tina Smith"
+              />
+            </div>
+            <h3>Email</h3>
+            <div className={styles.input}>
+              <input
+                type="text"
+                defaultValue="muchodinero@gmail.com"
+              />
+            </div>
+            <h3>Adress</h3>
+            <div className={styles.input}>
+              <input
+                type="text"
+                defaultValue="5 avenue Ingres, 75016 Paris"
+              />
+            </div>
+          </div>
+        </div>
+        {
+          price && (
+            <div className={styles.price}>
+              <div className={styles.box}>
+                <div className={styles.close} onClick={() => setPrice(false)}>
+                  <Image height='26' width='26' src='/images/close1.svg' alt='close'/>
+                </div>
+                <h2>Konfigg Pricing</h2>
+              </div>
+            </div>
+          )
+        }
       </div>
     </Layout>
   );

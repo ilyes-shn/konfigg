@@ -130,6 +130,102 @@ line-height: 36px;
   outline: none;
 }
 
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px; 
+  padding-right: 140px;
+}
+
+.gauche {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer
+}
+
+.gauche span {
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  color: #304FFE;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 0px 10px;
+}
+
+.gauche h4 {
+  font-size: 14px;
+  line-height: 32px;
+  margin-right: 10px;
+  font-weight: lighter;
+}
+
+.droite {
+  display: flex;
+}
+
+.droite h4 {
+  font-size: 14px;
+  line-height: 32px;
+  margin-right: 10px;
+  font-weight: lighter;
+}
+
+.droite span {
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 0px 10px;
+}
+
+.price {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  padding-top: 60px;
+}
+
+.box {
+  background-color: white;
+  padding: 60px 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  opacity: 0.6;
+  top: 60px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.box h2 {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
 
 @media only screen and (max-width: 600px) {
     .settings {

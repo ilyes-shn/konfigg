@@ -51,20 +51,10 @@ const Member = ({ color, state, lastUpdate, page, type }) => {
               alt="close"
             />
           </div>
-          <Image height='42' width='42' src={bg} alt='page icon'/>
-          <h4>Louis Vuitton</h4>
-          <h4>lvuitton@gmail.com</h4>
-          <div className={styles.stat}>
-        <h4 style={{ borderColor: color, color: color }}>{state}</h4>
-      </div>
-      
-        <h4>{type}</h4>
-   
-        <h4>{lastUpdate}</h4>
-     
+          <h4>Are you sure ?</h4>
           <Button
             variant="contained"
-            color="primary"
+            color="secondary"
             style={{ width: "max-content", marginTop: '10px' }}
             onClick={() => setModal(false)}
           >
@@ -73,8 +63,7 @@ const Member = ({ color, state, lastUpdate, page, type }) => {
         </div>
       </div>
           )
-      }
-      
+      }      
     </div>
   );
 };
